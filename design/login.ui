@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>350</width>
+    <height>281</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
         <property name="font">
          <font>
           <family>Poppins</family>
-          <pointsize>12</pointsize>
+          <pointsize>14</pointsize>
          </font>
         </property>
         <property name="text">
@@ -44,7 +44,7 @@
         <property name="font">
          <font>
           <family>Poppins</family>
-          <pointsize>12</pointsize>
+          <pointsize>14</pointsize>
          </font>
         </property>
         <property name="text">
@@ -57,13 +57,26 @@
       </item>
       <item row="1" column="1">
        <widget class="QLineEdit" name="lineEditPassword">
+        <property name="font">
+         <font>
+          <family>Poppins</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditUsername"/>
+       <widget class="QLineEdit" name="lineEditUsername">
+        <property name="font">
+         <font>
+          <family>Poppins</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -76,13 +89,13 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QPushButton" name="logInButton">
         <property name="font">
          <font>
           <family>Poppins</family>
-          <pointsize>12</pointsize>
+          <pointsize>14</pointsize>
          </font>
         </property>
         <property name="text">
@@ -97,14 +110,14 @@
        <widget class="QLabel" name="labelStatus">
         <property name="maximumSize">
          <size>
-          <width>200</width>
+          <width>347</width>
           <height>60</height>
          </size>
         </property>
         <property name="font">
          <font>
           <family>Poppins</family>
-          <pointsize>12</pointsize>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
@@ -123,6 +136,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
