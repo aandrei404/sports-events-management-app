@@ -2,3 +2,4 @@ venv/
 Makefile
 __pycache__/
 dbScripts/
+resources.qrc
