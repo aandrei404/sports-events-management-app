@@ -13,6 +13,9 @@ class Ui_FormLogIn(object):
     def setupUi(self, FormLogIn):
         FormLogIn.setObjectName("FormLogIn")
         FormLogIn.resize(350, 281)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(".\\design\\../images/icons/login.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        FormLogIn.setWindowIcon(icon)
         self.verticalLayout = QtWidgets.QVBoxLayout(FormLogIn)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frameUserPass = QtWidgets.QFrame(parent=FormLogIn)
@@ -64,6 +67,8 @@ class Ui_FormLogIn(object):
         font.setFamily("Poppins")
         font.setPointSize(14)
         self.logInButton.setFont(font)
+        self.logInButton.setIcon(icon)
+        self.logInButton.setIconSize(QtCore.QSize(20, 20))
         self.logInButton.setAutoDefault(True)
         self.logInButton.setObjectName("logInButton")
         self.verticalLayout_2.addWidget(self.logInButton)
@@ -84,7 +89,7 @@ class Ui_FormLogIn(object):
 
     def retranslateUi(self, FormLogIn):
         _translate = QtCore.QCoreApplication.translate
-        FormLogIn.setWindowTitle(_translate("FormLogIn", "Form"))
+        FormLogIn.setWindowTitle(_translate("FormLogIn", "Login"))
         self.labelUsername.setText(_translate("FormLogIn", "Username"))
         self.labelPassword.setText(_translate("FormLogIn", "Password"))
         self.logInButton.setText(_translate("FormLogIn", "Log In"))
