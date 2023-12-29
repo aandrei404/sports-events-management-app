@@ -23,7 +23,7 @@ class LoginWindow(QWidget):
         
     def connectLoginDb(self):
         self.loginDb = QSqlDatabase.addDatabase('QSQLITE', 'login')
-        self.loginDb.setDatabaseName('.\\data\\userInfo.sqlite')
+        self.loginDb.setDatabaseName('.\\db\\userInfo.sqlite')
     
         if not self.loginDb.open():
             self.ui.labelStatus.setText('Connection failed')

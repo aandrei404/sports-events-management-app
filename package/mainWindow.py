@@ -17,7 +17,7 @@ class MainWindow(QWidget):
         self.ui.setupUi(self)
         
         self.mainDB = QSqlDatabase.addDatabase('QSQLITE', 'main')
-        self.mainDB.setDatabaseName('.\\data\\competitiiSportive.sqlite')
+        self.mainDB.setDatabaseName('.\\db\\competitiiSportive.sqlite')
         
         if not self.mainDB.open():
             print("Database not opened")
