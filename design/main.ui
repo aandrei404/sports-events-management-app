@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Gestionare Competiții Sportive</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/icons/update.svg</normaloff>../images/icons/update.svg</iconset>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_7">
    <item>
@@ -32,7 +36,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tabParticipanti">
       <property name="styleSheet">
@@ -304,6 +308,10 @@ QHeaderVier::section
             <property name="text">
              <string>Search</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/search.svg</normaloff>../images/icons/search.svg</iconset>
+            </property>
             <property name="iconSize">
              <size>
               <width>20</width>
@@ -322,6 +330,10 @@ QHeaderVier::section
             </property>
             <property name="text">
              <string>Select</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/select.svg</normaloff>../images/icons/select.svg</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -342,6 +354,10 @@ QHeaderVier::section
             <property name="text">
              <string>Insert</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/insert.svg</normaloff>../images/icons/insert.svg</iconset>
+            </property>
             <property name="iconSize">
              <size>
               <width>20</width>
@@ -361,6 +377,10 @@ QHeaderVier::section
             <property name="text">
              <string>Update</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/update.svg</normaloff>../images/icons/update.svg</iconset>
+            </property>
             <property name="iconSize">
              <size>
               <width>20</width>
@@ -379,6 +399,10 @@ QHeaderVier::section
             </property>
             <property name="text">
              <string>Clear</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/clear.svg</normaloff>../images/icons/clear.svg</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -401,6 +425,10 @@ QHeaderVier::section
             </property>
             <property name="text">
              <string>Delete</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icons/delete.svg</normaloff>../images/icons/delete.svg</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -434,15 +462,15 @@ QHeaderVier::section
              <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">
+             <string notr="true">background-image: url(./images/bg_pic_small.png);
 background-repeat: no-repeat;
-background-position: bottom right;;</string>
+background-position: bottom right;</string>
             </property>
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
             </property>
             <property name="showGrid">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <attribute name="horizontalHeaderDefaultSectionSize">
              <number>185</number>
@@ -470,7 +498,7 @@ background-position: bottom right;;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -484,7 +512,7 @@ background-position: bottom right;;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -498,7 +526,7 @@ background-position: bottom right;;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -512,7 +540,7 @@ background-position: bottom right;;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -526,7 +554,7 @@ background-position: bottom right;;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
            </widget>
@@ -862,7 +890,8 @@ QHeaderVier::section
              <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-repeat: no-repeat;
+             <string notr="true">background-image: url(./images/bg_pic_small.png);
+background-repeat: no-repeat;
 background-position: bottom right;</string>
             </property>
             <property name="editTriggers">
@@ -894,7 +923,7 @@ background-position: bottom right;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -908,7 +937,7 @@ background-position: bottom right;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
             <column>
@@ -922,7 +951,7 @@ background-position: bottom right;</string>
               </font>
              </property>
              <property name="textAlignment">
-              <set>AlignCenter</set>
+              <set>AlignLeading|AlignVCenter</set>
              </property>
             </column>
            </widget>
@@ -1068,6 +1097,11 @@ background-position: bottom right;</string>
        </item>
        <item>
         <widget class="QFrame" name="frameInfo">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -1084,7 +1118,7 @@ background-position: bottom right;</string>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">
+             <string notr="true">background-image: url(./images/bg_pic_small.png);
 background-repeat: no-repeat;
 background-position: bottom right;</string>
             </property>
@@ -1092,7 +1126,7 @@ background-position: bottom right;</string>
              <set>QAbstractItemView::NoEditTriggers</set>
             </property>
             <property name="showGrid">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="cornerButtonEnabled">
              <bool>false</bool>
@@ -1118,7 +1152,7 @@ background-position: bottom right;</string>
   </layout>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="../resources.qrc"/>
  </resources>
  <connections/>
 </ui>

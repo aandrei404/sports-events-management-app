@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/icons/login.svg</normaloff>../images/icons/login.svg</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -100,6 +104,16 @@
         </property>
         <property name="text">
          <string>Log In</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/icons/login.svg</normaloff>../images/icons/login.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
         </property>
         <property name="autoDefault">
          <bool>true</bool>
