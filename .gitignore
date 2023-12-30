@@ -3,4 +3,3 @@ Makefile
 __pycache__/
 dbScripts/
 resources.qrc
-db_diagram.png
