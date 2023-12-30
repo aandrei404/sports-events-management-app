@@ -6,6 +6,7 @@ from package.loginWindow import LoginWindow
 def run():
     app = QApplication(sys.argv)
     
+    # first part is logging in
     loginWindow = LoginWindow()
     loginWindow.show()
 
